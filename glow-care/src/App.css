@@ -12,10 +12,17 @@ header h1{
   color: #b85c8a;
 }
 nav a{
-  margin: 10px;
+  margin: 0 12px;
   text-decoration: none;
   color: #444;
   font-weight:bold ;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+nav a:hover{
+  background-color: #ffd6e7;
+  color: #b85c8a;
 }
 .hero{
   text-align: center;
@@ -37,23 +44,24 @@ button{
   color: white;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  background: #b85c8a;
+  transform: scale(1.05);
 }
 .services{
   padding: 50px 20px;
   text-align: center;
+}
+.services h2{
+  color: #b85c8a;
 }
 .cards{
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-.card{
-  background: white;
-  padding: 20px;
-  width: 220px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .contact{
   background: #ffeef4;
@@ -96,6 +104,41 @@ button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+ .card {
+  text-align: center;
+  transition:all 0.3s ease;
+  cursor: pointer;
+  background: #fff0f5;
+  border: 1px solid #f3b6cc;
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0 ,0.2 );
+    background-color: #fff0f5;
+  }
+  .about{
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about h2{
+  color: #b85c8a;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.about-box{
+  background: #fff5fa;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+} 
 @media (max-width: 768px) {
 
   h1 {
@@ -117,10 +160,7 @@ button:hover {
     align-items: center;
   }
 
-  .card {
-    width: 80%;
-  }
-
+ 
   .hero-image {
     width: 95%;
   }
